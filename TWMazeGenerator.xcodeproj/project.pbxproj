@@ -21,6 +21,10 @@
 		DBF8C47618120284001911C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF8C45818120284001911C9 /* UIKit.framework */; };
 		DBF8C47E18120284001911C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBF8C47C18120284001911C9 /* InfoPlist.strings */; };
 		DBF8C48018120284001911C9 /* TWMazeGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C47F18120284001911C9 /* TWMazeGeneratorTests.m */; };
+		DBF8C48B181202C4001911C9 /* TWMazeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C48A181202C4001911C9 /* TWMazeGenerator.m */; };
+		DBF8C48E181202D3001911C9 /* TWMaze.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C48D181202D3001911C9 /* TWMaze.m */; };
+		DBF8C491181202DB001911C9 /* TWTile.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C490181202DB001911C9 /* TWTile.m */; };
+		DBF8C49418120AE3001911C9 /* TWDepthFirstPathFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C49318120AE3001911C9 /* TWDepthFirstPathFinder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,15 @@
 		DBF8C47B18120284001911C9 /* TWMazeGeneratorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TWMazeGeneratorTests-Info.plist"; sourceTree = "<group>"; };
 		DBF8C47D18120284001911C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DBF8C47F18120284001911C9 /* TWMazeGeneratorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWMazeGeneratorTests.m; sourceTree = "<group>"; };
+		DBF8C489181202C4001911C9 /* TWMazeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWMazeGenerator.h; sourceTree = "<group>"; };
+		DBF8C48A181202C4001911C9 /* TWMazeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWMazeGenerator.m; sourceTree = "<group>"; };
+		DBF8C48C181202D3001911C9 /* TWMaze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWMaze.h; sourceTree = "<group>"; };
+		DBF8C48D181202D3001911C9 /* TWMaze.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWMaze.m; sourceTree = "<group>"; };
+		DBF8C48F181202DB001911C9 /* TWTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTile.h; sourceTree = "<group>"; };
+		DBF8C490181202DB001911C9 /* TWTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTile.m; sourceTree = "<group>"; };
+		DBF8C49218120AE3001911C9 /* TWDepthFirstPathFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWDepthFirstPathFinder.h; sourceTree = "<group>"; };
+		DBF8C49318120AE3001911C9 /* TWDepthFirstPathFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWDepthFirstPathFinder.m; sourceTree = "<group>"; };
+		DBF8C49518120D24001911C9 /* TWPathFinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWPathFinder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +130,15 @@
 				DBF8C46618120284001911C9 /* Main.storyboard */,
 				DBF8C46918120284001911C9 /* TWViewController.h */,
 				DBF8C46A18120284001911C9 /* TWViewController.m */,
+				DBF8C49518120D24001911C9 /* TWPathFinder.h */,
+				DBF8C489181202C4001911C9 /* TWMazeGenerator.h */,
+				DBF8C48A181202C4001911C9 /* TWMazeGenerator.m */,
+				DBF8C49218120AE3001911C9 /* TWDepthFirstPathFinder.h */,
+				DBF8C49318120AE3001911C9 /* TWDepthFirstPathFinder.m */,
+				DBF8C48C181202D3001911C9 /* TWMaze.h */,
+				DBF8C48D181202D3001911C9 /* TWMaze.m */,
+				DBF8C48F181202DB001911C9 /* TWTile.h */,
+				DBF8C490181202DB001911C9 /* TWTile.m */,
 				DBF8C46C18120284001911C9 /* Images.xcassets */,
 				DBF8C45B18120284001911C9 /* Supporting Files */,
 			);
@@ -250,9 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBF8C491181202DB001911C9 /* TWTile.m in Sources */,
 				DBF8C46118120284001911C9 /* main.m in Sources */,
+				DBF8C49418120AE3001911C9 /* TWDepthFirstPathFinder.m in Sources */,
+				DBF8C48E181202D3001911C9 /* TWMaze.m in Sources */,
 				DBF8C46518120284001911C9 /* TWAppDelegate.m in Sources */,
 				DBF8C46B18120284001911C9 /* TWViewController.m in Sources */,
+				DBF8C48B181202C4001911C9 /* TWMazeGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
