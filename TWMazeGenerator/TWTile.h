@@ -41,6 +41,7 @@ typedef enum: uint8_t{
 @property(nonatomic, readonly)CGPoint position;//position in grid.
 @property(nonatomic)BOOL visited;//has this tile been visited? not really used in the end.
 @property(nonatomic)NSMutableArray *walls;//walls array hold neighbors. A tile in here means there is a wall between it and self
+										  //@property(nonatomic, strong)NSMutableArray *open;
 @property(nonatomic)CGSize size;//size of tile. (Not used but you could)
 
 -(id)initWithPosition:(CGPoint)position;
